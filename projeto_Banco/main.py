@@ -23,26 +23,9 @@ banco.inserir_clientes(cliente2)
 banco.inserir_conta(conta2)
 
 if banco.authenticar(cliente1):
-    cliente1.conta.depositar(200)
+    cliente1.conta.depositar(101)
     cliente1.conta.sacar(20)
 else:
     print('Cliente não autenticado.')
 
-# print('####################')
-
-# if banco.authenticar(cliente2):
-#     cliente2.conta.depositar(0)
-#     cliente2.conta.sacar(20)
-# else:
-#     print('Cliente não autenticado.')
-
-print('####################')
-
-if banco.authenticar(cliente3):
-    cliente3.conta.depositar(0)
-    cliente3.conta.sacar(21110)
-else:
-    print('Cliente não autenticado.')
-
-saldo = cliente3.conta.saldo
-print(saldo)
+print(cliente1.conta.saldo)
