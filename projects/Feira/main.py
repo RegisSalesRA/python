@@ -1,3 +1,11 @@
+from views.functions import somar
+from time import sleep
+from typing import List, Dict
+
+
+#produtos: List[Produto] = []
+
+
 def main():
     menu()
 
@@ -7,26 +15,24 @@ def menu():
     print('2 subtrair')
     print('3 multiplicar')
     print('4 dividir')
+    print('5 sair')
     
     choice = input()
     if(choice == '1'):
         somar()
+        menu()
     elif(choice == '2'):
         print('opcao 2')
     elif(choice == '3'):
         print('opcao 3')
+    elif(choice == '5'):
+        print('Volte sempre!')
+        sleep(2)
+        exit(0)    
     else:
-        print("You entered a wrong choice")
-
-
-def somar():
-    print('valor 1')
-    valor_1 = input()
-    print('valor 2')
-    valor_2 = input()
-    
-    valor = int(valor_1) + int(valor_2)
-    print(valor)
+        print('Opção inválida!')
+        sleep(1)
+        menu()
 
 
 if __name__ == "__main__":
