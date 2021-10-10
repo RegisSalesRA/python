@@ -13,4 +13,5 @@ class Alimento:
    
 
 melancia = Alimento(nome="Melancia 1", preco="12")
+laranja = Alimento(nome"Laranja",preco="12")
 print(melancia.nome)
