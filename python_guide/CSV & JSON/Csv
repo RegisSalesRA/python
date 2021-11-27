@@ -1,0 +1,15 @@
+import csv
+
+with open('arquivo.csv', newline='') as f, open("arquivo_novo.csv", "w") as outfile:
+    arquivo = csv.reader(f)
+    nov_cod = 2900
+    next(arquivo, None)
+    writer = csv.writer(outfile)
+    value_start = 0
+    for row in arquivo:
+        if value_start != row[0]:
+            nov_cod += 1
+        escreve = [str(nov_cod)]
+        writer.writerow(escreve)
+        value_start = row[0]
+        
