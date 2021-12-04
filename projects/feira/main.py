@@ -1,11 +1,9 @@
-from views.functions import adicionar_alimento, listar_alimentos
+from views.functions import adicionar_alimento, atualizar_alimento, listar_alimentos
 from time import sleep
 from typing import List, Dict
 from models.alimentos import Alimento
 
-
 lista_alimentos : List[Alimento] = []
-
 
 def main():
     menu()
@@ -23,6 +21,7 @@ def menu():
     choice = input()
     if(choice == '1'):
         adicionar_alimento(lista_alimentos)
+        print('')
         sleep(2)
         menu()
     elif(choice == '2'):
@@ -33,9 +32,22 @@ def menu():
         if(choice == 'Menu'):
             menu()
         else:
-            pass
+            pass    
     elif(choice == '3'):
-        print('opcao 3')
+        print('Digite o nome do alimento que deseja atualizar')
+        print('Digite Menu para voltar ao menu')
+        choice = input()
+        
+        if(choice == 'Menu'):
+            print('')
+            menu()
+            print('')
+        elif(choice != 'Menu'):
+            atualizar_alimento(lista_alimentos,choice)
+            print('')
+            menu()
+        else:
+            pass
     elif(choice == '4'):
         print('opcao 4')
     elif(choice == '5'):
