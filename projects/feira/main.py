@@ -1,4 +1,4 @@
-from views.functions import adicionar_alimento, atualizar_alimento, listar_alimentos
+from views.functions import adicionar_alimento, atualizar_alimento, buscar_alimento, deletar_alimento, listar_alimentos
 from time import sleep
 from typing import List, Dict
 from models.alimentos import Alimento
@@ -14,8 +14,8 @@ def menu():
     print('1 - Cadastrar alimento')
     print('2 - Listar alimentos')
     print('3 - Atualizar alimento')
-    print('4 - Deletar alimento')
-    print('5 - Buscar alimento cadastrado')
+    print('4 - Buscar alimento e preco cadastrado')
+    print('5 - Deletar alimento')
     print('6 - Sair do sistema')
     
     choice = input()
@@ -32,7 +32,8 @@ def menu():
         if(choice == 'Menu'):
             menu()
         else:
-            pass    
+            print('Redirecionando para o menu')
+            menu()    
     elif(choice == '3'):
         print('Digite o nome do alimento que deseja atualizar')
         print('Digite Menu para voltar ao menu')
@@ -47,11 +48,41 @@ def menu():
             print('')
             menu()
         else:
-            pass
+            print('Nao encontrado')
+            menu()
     elif(choice == '4'):
-        print('opcao 4')
+        print('Digite o nome do alimento que deseja buscar')
+        print('Digite Menu para voltar ao menu')
+        choice = input()
+        
+        if(choice == 'Menu'):
+            print('')
+            menu()
+            print('')
+        elif(choice != 'Menu'):
+            buscar_alimento(lista_alimentos,choice)
+            print('')
+            menu()
+        else:
+            print('Nao encontrado')
+            menu()
     elif(choice == '5'):
-        print('opcao 5')
+        print('Digite o nome do alimento que deseja deletar')
+        print('Digite Menu para voltar ao menu')
+        choice = input()
+        
+        if(choice == 'Menu'):
+            print('')
+            menu()
+            print('')
+        elif(choice != 'Menu'):
+            deletar_alimento(lista_alimentos,choice)
+            print('')
+            menu()
+        else:
+            print('Nao encontrado')
+            menu()
+
     elif(choice == '6'):
         print('Volte sempre!')
         sleep(2)

@@ -1,4 +1,5 @@
 from models.alimentos import Alimento
+import os
 
 def adicionar_alimento(lista):
     print('Cadastro de Alimento')
@@ -20,10 +21,6 @@ def listar_alimentos(lista):
     for alimento in lista:
         print(f'O alimento {alimento.nome} custa {alimento.preco}$')       
 
-def atualizar_alimentos(lista):
-    for alimento in lista:
-        print(f'O alimento {alimento.nome} custa {alimento.preco}$')
-
 def atualizar_alimento(lista,item_escolhido):
     print('Lista de Alimentos')
     print('===================')
@@ -36,5 +33,28 @@ def atualizar_alimento(lista,item_escolhido):
                 print(alimento.nome)
                 alimento.update(nome=nome,preco=preco)
                 print(alimento.nome)
+    except:
+        print('Nao encontrado')
+
+def buscar_alimento(lista,item_escolhido):
+    print('Lista de Alimentos')
+    print('===================')
+    print('')
+    try:
+        for alimento in lista:
+            if(item_escolhido == alimento.nome):
+                print(f'O alimento {alimento.nome} esta custando {alimento.preco}')
+    except:
+        print('Nao encontrado')
+
+def deletar_alimento(lista,choice):
+    print('Deletar Alimento')
+    print('===================')
+    print('')
+    try:
+        for alimento in lista:
+            if(choice == alimento.nome):
+                lista.remove(alimento)
+                print(f'{alimento} foi deletado com sucesso!')
     except:
         print('Nao encontrado')
