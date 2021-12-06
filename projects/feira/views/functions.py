@@ -1,3 +1,4 @@
+from helpers.helpers import alimento_uppercase
 from models.alimentos import Alimento
 import os
 
@@ -8,8 +9,8 @@ def adicionar_alimento(lista):
     nome: str = input('Informe o nome do produto: ')
     preco: float = float(input('Informe o preço do produto: '))
 
-    alimento: Alimento = Alimento(nome, preco)
-
+    
+    alimento: Alimento = Alimento(alimento_uppercase(nome), preco)
     lista.append(alimento)
 
     print(f'O alimento {alimento.nome} foi cadastrado com sucesso!')
@@ -31,7 +32,7 @@ def atualizar_alimento(lista,item_escolhido):
                 nome: str = input('Informe o novo nome do produto: ')
                 preco: float = float(input('Informe o novo preço do produto: '))
                 print(alimento.nome)
-                alimento.update(nome=nome,preco=preco)
+                alimento.update(nome=alimento_uppercase(nome),preco=preco)
                 print(alimento.nome)
     except:
         print('Nao encontrado')

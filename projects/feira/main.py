@@ -45,7 +45,7 @@ def menu():
             print('')
         elif(choice != 'Menu'):
             atualizar_alimento(lista_alimentos,choice)
-            print('')
+            print('Atualizado com sucesso')
             menu()
         else:
             print('Nao encontrado')
