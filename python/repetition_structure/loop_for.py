@@ -8,6 +8,5 @@ for letra in nome:
 for iten in lista:
    print(iten,end="")
 
-
 for numero in numeros:
    print(numero,end="")

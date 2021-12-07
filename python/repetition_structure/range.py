@@ -9,7 +9,6 @@ for numero in range(11):
 for num in range(5,50,5):
     print(num)
 
-   
 # (valor do inicio,valor_de_parada, passo) INVERSO
 for num in range(5,-50,-5):
     print(num)
