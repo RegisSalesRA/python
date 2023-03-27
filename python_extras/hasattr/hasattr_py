@@ -1,0 +1,22 @@
+def get(self, request):
+    user = request.user
+    if hasattr(user, 'student'):
+            content = {
+            'id' : user.id,
+            'user': str(user),
+            'is_student': user.is_student,
+            'is_teacher':user.is_teacher,
+            'id_teacher' : user.student.id,
+            'name': str(user.student.name),
+            'phone': str(user.student.phone),
+        }
+    else:
+            content = {
+            'id' : user.id,    
+            'user': str(user),
+            'is_student': user.is_student,
+            'is_teacher':user.is_teacher,
+            'id_teacher' : user.teacher.id,
+            'phone': str(user.teacher.phone),
+        } 
+    return Response(content)
