@@ -4,12 +4,17 @@ Dica de quando e onde de tratar codigo:
 Toda entrada  do usuario deve ser tratada!
 OBS: A funcao do usuario e DESTRUIR seu sistema
 # Else => e executado somente se ocorrer o erro
+"""
+
+
 try:
     num = int(input('Informe um numero: '))
 except ValueError:
     print('Valor incorreto')
 else:
     print(f'voce digitou {num}')
+
+
 # Finally
 try:
     num = int(input('Informe um numero: '))
@@ -25,6 +30,9 @@ finally:
 def dividir(a, b):
     return a / b
 num1 = int(input('Informe o primeiro numero: '))
+
+
+
 try:
     num2 = int(input('Informe o segundo numero: '))
 except ValueError:
@@ -45,7 +53,7 @@ def dividir(a, b):
 num1 = input('Informe o primeiro numero: ')
 num2 = input('Informe o segundo numero: ')
 print(dividir(num1, num2))
-"""
+
 
 
 # Exemplo mais complexo Generico
@@ -77,3 +85,25 @@ num1 = input('Informe o primeiro numero: ')
 num2 = input('Informe o segundo numero: ')
 
 print(dividir(num1, num2))
+
+
+
+# Example New
+
+# try, except, else e finally
+# https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
+try:
+    print('ABRIR ARQUIVO')
+    8/0
+except ZeroDivisionError as e:
+    print(e.__class__.__name__)
+    print(e)
+    print('DIVIDIU ZERO')
+except IndexError as error:
+    print('IndexError')
+except (NameError, ImportError):
+    print('NameError, ImportError')
+else:
+    print('Não deu erro')
+finally:
+    print('FECHAR ARQUIVO')

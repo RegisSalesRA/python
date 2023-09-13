@@ -32,4 +32,19 @@ def conta_ate(valor_maximo):
 
 gen = conta_ate(5)
 
-print(type(gen))
+#print(type(gen))
+
+
+
+# Exemplo 2
+
+def generator(n=0, maximum=10):
+    while True:
+        yield n
+        n += 1
+        if n >= maximum:
+            return
+        
+gen = generator(maximum=100000000)
+for n in gen:
+    print(n)
