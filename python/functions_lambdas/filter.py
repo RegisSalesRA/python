@@ -1,7 +1,7 @@
-"""
-filter
 
-filter() Serve para filtrar dados de uma determinada colecao
+# filter
+
+# filter() Serve para filtrar dados de uma determinada colecao
 
 # Biblioteca para trabalhar com dados estatisticos
 import statistics
@@ -27,7 +27,7 @@ paises = ['','Argentina','','Brasil','','Chile','', 'Colombia','','Equador','','
 
 # print(list(res))
 
-"""
+
 
 # A diferenca entre map e filter E na map recebe dois parametros uma funcao e um interavel e retorna um objeto
 # Mapeando uma funcao para cada elemento do interavel

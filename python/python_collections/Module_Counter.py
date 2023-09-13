@@ -7,6 +7,7 @@ Counter -> Recebe um interavel como parametro e cria um objeto do tipo Collectio
 com um dicionario , contendo como chave o elemento da lista passada como parametro e como valor a quantidade
 da ocorrencia desse elemento
 
+"""
 
 # Utilizando Counter
 
@@ -26,9 +27,9 @@ print(res)
 
 
 # Exemplo 2
+
 print(Counter('Geek University'))
 Counter({'e': 3, 'i': 2, 'G': 1, 'k': 1, ' ': 1, 'U': 1, 'n': 1, 'v': 1, 'r': 1, 's': 1, 't': 1, 'y': 1})
-"""
 
 
 from collections import Counter

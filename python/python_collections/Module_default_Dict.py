@@ -22,11 +22,11 @@ e retornar valores.
 from collections import defaultdict
 from collections import Counter
 
-dicionario = defaultdict(lambda :0)
+dicionario = defaultdict(lambda : 0)
 
 dicionario['curso'] = 'Programacao Python Essencial'
 print(dicionario)
 
-print(dicionario['outro']) # Keyerror no dicionario comum , mas aqui nao
+print(dicionario['outro'],) # Keyerror no dicionario comum , mas aqui nao
 
 print(dicionario)

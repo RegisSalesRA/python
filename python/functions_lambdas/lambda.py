@@ -6,6 +6,8 @@ funçoes anonimas
 
 EX basico
 
+"""
+
 def funcao(x):
     return 3 + x * 2
 
@@ -42,5 +44,3 @@ autores = ['Isan stream','tien aukti','tim drake','drake burton','josh drown','f
 
 autores.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
 print(autores)
-"""
-

@@ -14,6 +14,7 @@ OBS: Sobre dicionarios
     - Chave e valor sao separados por ":"  Ex: 'chave:valor';
     - Tanto chave quanto valor podem ser de qualquer tipo de dado;
     - Podemos misturar tipos de dados;
+"""
 
 # Criacao de dicionarios
 
@@ -31,12 +32,13 @@ print(paises)
 print(type(paises))
 
 # Forma 1 - Acessando via chave, da mesma forma que lista/tupla
-#print(paises['br'])
-#print(paises['ru'])
+
+print(paises['br'])
+print(paises['ru'])
 
 # OBS: Caso tentamo fazer uma acesso utilizando uma chave que nao existe teremos o erro key error
 
-# Forma 2 - Acessando via get - Recomendado
+# Forma 2 - Acessando via get por chave - Recomendado
 
 print(paises.get('br'))
 print(paises.get('ru'))
@@ -74,6 +76,7 @@ if 'ru' in paises:
 
 # Tuplas por exemplos sao bastante interessantes de serem utilizadas como chave de dicionarios, pois as mesmas
 # sao imutaveis.
+
 localidades = {
     (35.6515, 32.3213): 'Escritorio em tokio',
     (50.6515, 42.3213): 'Escritorio em nova york',
@@ -150,7 +153,8 @@ print(receita)
 
 # Imagine que voce tem um comercio eletronico
 # onde temos um carrinho de compras onde adicionamos produtos
-"""
+
+
 Carrinho de compras:
     produto 1:
         -nome;
@@ -160,6 +164,8 @@ Carrinho de compras:
         -nome:
         -quantidade:
         -preco:
+
+"""
 
 # - poderiamos utilizar uma Lista para isso? Sim
 
@@ -211,9 +217,9 @@ d.clear()
 print(d)
 
 
-# COpiando um dicionario para outro
+# Copiando um dicionario para outro
 
-# FOrma 1
+# Forma 1
 
 # Deep Copy
 novo = d.copy()
@@ -231,7 +237,6 @@ novo['d'] = 4
 
 print(d)
 print(novo)
-"""
 
 
 # Forma nao usual de criacao de dicionarios
@@ -253,3 +258,52 @@ print(veja)
 veja = {}.fromkeys(range(1,11),'novo')
 
 print(veja)
+
+
+# Iterar sobre dicionarios
+
+receita = {'jan': 100, 'fev': 250, 'mar': 500}
+
+for chave in receita:
+    print(chave, end=' ')
+
+for chave in receita:
+    print(receita[chave], end=' ')
+
+for chave in receita:
+    print(f'{chave} : {receita[chave]}', end=' ')
+
+
+# Acessando as chaves
+# Retorna dicionario de chaves
+print(receita.keys())
+
+for chave in receita.keys():
+    print(receita[chave])
+
+
+# Acessando os valores
+print(receita.values())
+
+for valor in receita.values():
+    print(valor)
+
+print(receita)
+
+
+# Desempacotamento de dicionarios
+
+print(receita.items())
+
+for chave, valor in receita.items():
+    print(f'chave={chave} e valor={valor}')
+
+
+# Soma*, Valor Maximo* ,Valor Minimo*, Tamanho
+
+# Se os valores forem reais ou inteiros
+
+print(sum(receita.values()))
+print(max(receita.values()))
+print(min(receita.values()))
+print(len(receita.values()))

@@ -19,7 +19,7 @@ Os conjuntos (sets) sao referenciados em python com chaves {}
 Diferenca entre conjuntos (Set) e mapas (dicionarios) em python:
     - Um dicionario tem chave/valor:
     - Um conjunto tem apenas valor:
-
+"""
 
 # Definindo um conjunto
 
@@ -130,7 +130,7 @@ print(s)
 
 # Forma 1 - Deep Copy
 
-novo =s.copy()
+novo = s.copy()
 print(novo)
 
 novo.add(4)
@@ -195,4 +195,3 @@ print(ambos2)
 
 so_python = estudantes_python.difference(estudantes_java)
 print(so_python)
-"""

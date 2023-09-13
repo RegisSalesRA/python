@@ -3,6 +3,8 @@ Map
 
 com map, fazemos mapeamento de valores para funcao
 
+"""
+
 import math
 
 def area(r):
@@ -29,6 +31,7 @@ print(list(areas))
 # Forma 3 map com lambda
 
 print(list(map(lambda r: math.pi * (r ** 2), raios)))
+
 """
 
 # Para Fixar map
@@ -44,6 +47,8 @@ print(list(map(lambda r: math.pi * (r ** 2), raios)))
 # Ultilizamos  a funcao map(f, dados) onde map ira 'mapear' cada elemento dos dados e aplicar a funcao
 
 # O map Object: f(a1), f(a2),f(...),f(an)
+
+"""
 
 
 listaDados = [1,2,3,4,5]

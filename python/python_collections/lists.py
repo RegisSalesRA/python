@@ -7,6 +7,7 @@ de serem dinamicos e tambem de poderemos colocar QUALQUER tipo de dado
 
 As listas de python sao representadas por: []
 
+"""
 
 type([])
 
@@ -38,9 +39,11 @@ lista1.sort()
 
 # Adicionar elementos em listas
 
+"""
 Para adicionar elementos em listas,utilizamos a funcao append
 
 OBS: Com o append nos conseguimos adicionar somente um elemento por vez
+"""
 
 #print(lista1)
 #lista1.append(500)
@@ -307,8 +310,9 @@ print(num1)
 print(num2)
 print(num3)
 
+"""
 OBS: Se tivermos um numero diferente de elementos na lista ou variaveis para receber os dados,teremos ValueError
-
+"""
 
 
 # Copiando lista para outra (shallow copy deep copy)
@@ -329,7 +333,7 @@ print(nova)
 
 # Forma 2 - Shallow copy
 
-lista = [1,2,3]
+lista = [1,2,3 , [5,4]]
 print(lista)
 nova = lista
 print(nova)
@@ -340,6 +344,24 @@ print(nova)
 # Veja que utilizamos a copia via atribuicao e copiamos os dados da lista para a nova lista
 # Mas ao modificar um dos elementos da lista  essa modificao refletiu em ambas as listas
 # Isso em python e shallo copy
+
+# Forma 3 Deep copy
+
+import copy
+
+d1 = {
+    'c1':1,
+    'c2':2,
+    'l1':[0,1,2]
+}
+
+d2 = copy.deepcopy(d1)
+
+d2['c1'] = 1000
+d2['l1'][1] = 9999
+
+print(d1)
+print(d2)
 
 """
 type([])
@@ -356,3 +378,4 @@ lista4 = list(range(11))
 lista5 = list('Geek university')
 
 cores = ['branco','azul','verde','amarelo']
+"""

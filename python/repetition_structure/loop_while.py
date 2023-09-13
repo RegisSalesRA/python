@@ -68,6 +68,7 @@ data = [{ "kanto": [{
             }
           ]
         }]}]}]
+
 data_lenght = data[0]["kanto"][0]["location"][0]
 
 data_map = {

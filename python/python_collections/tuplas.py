@@ -9,7 +9,7 @@ Existem basicamente duas diferencas basicas:
 
 2 - As tuplas sao imutaveis: Isso significa que ao se criar uma tupla ela nao muda. Toda
 operacao em uma tupla gera uma nova tupla
-
+"""
 
 # CUIDADO 1: As tuplas sao representadas por (), mas veja:
 
@@ -37,9 +37,9 @@ print(type(tupla5))
 
 # Conclusao: podemos concluir que tuplas sao definidas por virgula e nao pelo uso do paranteses
 
-(4) -> Nao e tupla
-(4,) -> e tupla
-4, -> e tupla
+# (4) -> Nao e tupla
+# (4,) -> e tupla
+#  4, -> e tupla
 
 
 # Podemos gerar uma tupla dinamicamente com range( inicio,fim,passo )
@@ -146,7 +146,7 @@ print(meses.index('Janeiro'))
 # tupla[inicio:fim:passo]
 
 print(meses[5:9])
-"""
+
 
 # porque utilizar tuplas?
 
@@ -156,6 +156,7 @@ print(meses[5:9])
 # - Isso porque trabalhar com elementos imutaveis traz seguranca para o codigo
 
 # copiando uma tupla para outra
+
 tupla = (1,2,3)
 print(tupla)
 nova = tupla

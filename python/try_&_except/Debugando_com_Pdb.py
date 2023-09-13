@@ -1,6 +1,6 @@
-"""
-Debugando com PDB
-PDB -> Python Debugger
+
+#Debugando com PDB
+#PDB -> Python Debugger
 #OBS: A utilizacao do print() para debugar codigo e uma pratica ruim
 def dividir(a,b):
     print(f'a={a},b={b}')
@@ -38,7 +38,7 @@ print(final)
 # o debug e utilizado durante o desenvolvimento . Custamos realizar todos os imports de bibliotecas
 # no inicio do arquivo. Por isso ,ao inves de colocarmos o import do pdb no inicio do arquivo
 # nos colocamos somente onde vamos debuggar , e ao finalizar ja fazemos a remocao
-"""
+
 
 
 # Exemplo com o pdb - python debugger 3
