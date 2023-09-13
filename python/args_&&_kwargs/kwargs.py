@@ -112,3 +112,24 @@ soma_multiplos_numeros(**dicionario)
 dicionario = dict(a=1,b=2,c=3, nome='Geek')
 
 soma_multiplos_numeros(**dicionario,lang='Python')
+
+
+
+def mostro_argumentos_nomeados(*args,**kwargs):
+    print("Nao nomeados", args)
+
+    for chave, valor in kwargs.items():
+        print(chave, valor)
+
+mostro_argumentos_nomeados(2,3,nome="Regis", sobrenome="Sales")
+
+
+
+configuracoes = {
+    'arg1': 1,
+    'arg2': 2,
+    'arg3': 3,
+    'arg4': 4,
+}
+
+mostro_argumentos_nomeados(**configuracoes)

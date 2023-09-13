@@ -1,27 +1,29 @@
 """
 Dictionary Comprehension
 
-Pense o seguinte:
+"""
 
-se quisermos criar uma lista fazemos:
+# Pense o seguinte:
+
+# se quisermos criar uma lista fazemos:
 
 lista = [1,2,3,4,5]
 
-se quisermos criar uma tupla
+# se quisermos criar uma tupla
 
 tupla = (1,2,3,4)
 
-se quisermos criar um set (conjunto)
+# se quisermos criar um set (conjunto)
 
 conjunto = {1,2,3,4}
 
-Se quisermos criar um dicionario
+# Se quisermos criar um dicionario
 
 dicionario = {'a':1,'b':2,'c':3,'d':4}
 
 # Sintaxy
 
-{chave:valor for valor in iteravel}
+# {chave:valor for valor in iteravel}
 
 # Exemplos
 
@@ -40,7 +42,7 @@ valores = [1,2,3,4,5]
 
 mistura = {chaves[i]:valores[i] for i in range(0,len(chaves))}
 print(mistura)
-"""
+
 
 
 # Com logica condicional
@@ -49,3 +51,5 @@ numeros = [1,2,3,4,5]
 res = {num:('par' if num % 2 == 0 else 'impar') for num in numeros}
 
 print(res)
+
+
