@@ -3,6 +3,8 @@ TRabalhando com modulos builtin (Modulos integrados, que ja vem instalados no py
 ........................
 /Python/Modulos builtin/
 ````````````````````````
+"""
+
 # Utilizando alias (apelido) para modulos/funcoes
 import random as rdm
 
@@ -24,11 +26,10 @@ from random import randint as rdi, random as rdm
 print(rdi(5,89))
 print(rdm())
 
-"""
 
 # Costumamos a utilziar tuple para colocar multiplos imports de um mesmo modulo
 
-from random import (random,randint,shuffle,choice)
+from random import (random, randint, shuffle, choice)
 
 print(random())
 lista = ['geek','universidade','python']

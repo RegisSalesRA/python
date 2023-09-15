@@ -7,6 +7,8 @@ Modulo Random -> Possui varias funcoes para geracao de numeros pseudo-aleatorio
 
 
 # OBS: existem duas formas de se utilizar um modulo ou funcao deste
+"""
+
 
 # Forma 1 - importanndo todo o modulo
 
@@ -66,5 +68,5 @@ cartas = ['k','b','c','a']
 print(cartas)
 shuffle(cartas)
 print(cartas)
-"""
+
 
