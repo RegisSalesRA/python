@@ -91,7 +91,8 @@ print(dividir(num1, num2))
 # Example New
 
 # try, except, else e finally
-# https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
+
+
 try:
     print('ABRIR ARQUIVO')
     8/0

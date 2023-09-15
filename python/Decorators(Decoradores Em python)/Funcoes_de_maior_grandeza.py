@@ -64,3 +64,34 @@ def faz_me_rir_novamente(pessoa):
 rindo = faz_me_rir_novamente('Fernanda')
 print(rindo())
 """
+
+import datetime
+
+# Definindo o decorador
+def registrar_chamada(func):
+    def wrapper(*args, **kwargs):
+        resultado = func(*args, **kwargs)
+        print(f"Args: {args}")
+        print(f"Kwargs: {kwargs}")
+        agora = datetime.datetime.now()
+        print(f"A função {func.__name__} foi chamada em {agora}")
+        return resultado
+    return wrapper
+
+# Aplicando o decorador à função de soma
+@registrar_chamada
+def soma(x, y, num="keyValue"):
+    return x + y
+
+# Chamando a função de soma
+resultado = soma(5, 7, num="keyValue")
+print(f"Resultado da soma: {resultado}")
+
+# OUTPUT
+
+"""
+Args: (5, 7)
+Kwargs: {'num': 'keyValue'}
+A função soma foi chamada em 2023-09-14 14:44:57.100326
+Resultado da soma: 12
+"""
