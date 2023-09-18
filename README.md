@@ -16,7 +16,8 @@ projects - logic projects using pure python
 ```python
 variables always with snakecase
 functions always with snakecase
-class always with camelcase
+class always with PascalCase
+
 ```
 
 ## Pep8

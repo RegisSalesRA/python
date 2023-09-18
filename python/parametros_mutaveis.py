@@ -1,4 +1,12 @@
 # Problema dos parâmetros mutáveis em funções Python
+
+"""
+
+Parâmetros mutáveis referem-se a objetos mutáveis que podem ser modificados dentro de uma função e afetar o valor original fora da função.
+É importante ter cuidado ao manipular objetos mutáveis passados como argumentos para evitar efeitos colaterais indesejados.
+
+"""
+
 def adiciona_clientes(nome, lista=None):
     if lista is None:
         lista = []
