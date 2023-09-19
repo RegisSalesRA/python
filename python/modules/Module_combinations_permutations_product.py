@@ -23,7 +23,14 @@ camisetas = [
     ["algodao", "polister"],
 ]
 
+mulheres_album = [
+    ["africana", "ruiva", "loira", "latina", "asiatica"],
+    ["America do sul", "Europa", "Asia", "Oceania", "America do norte"],
+    ["Fantasia outro genero", "Fantasia com mesmo genero"],
+    ["Anã","Não Anã"]
+]
 
-print_iter(combinations(pessoas,2))
-print_iter(permutations(pessoas,2))
-print_iter(product(*camisetas))
+#print_iter(combinations(pessoas,2))
+#print_iter(permutations(pessoas,2))
+
+print_iter(product(*mulheres_album))
