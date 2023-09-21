@@ -1,5 +1,5 @@
-"""
-Metodos data e hora
+ 
+# Metodos data e hora
 
 # Com now podemos especificar um timezone (Fuso horario)
 agora = datetime.datetime.now()  # Now agora
@@ -108,6 +108,6 @@ def formata_data(data):
 hoje = datetime.datetime.today()
 
 print(formata_data(hoje))
-"""
+
 
 import datetime

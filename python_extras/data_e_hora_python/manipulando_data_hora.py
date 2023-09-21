@@ -1,8 +1,10 @@
-"""
+
+""" 
 Manipulando Data e Hora
 
 Python tem um modulo built-in (integrado) para se trabalhar com data e hora
 chamado datetime
+"""
 
 
 import datetime
@@ -43,8 +45,7 @@ aniversario = aniversario.split('/')
 aniversario = datetime.datetime(int(aniversario[2]), int(aniversario[1]), int(aniversario[0]))
 print(aniversario)
 print(type(aniversario))
-
-"""
+ 
 
 import datetime
 
