@@ -1,0 +1,13 @@
+def match_example(option):
+    match option:
+        case 1:
+            print("Opção 1 escolhida")
+        case 2:
+            print("Opção 2 escolhida")
+        case 3:
+            print("Opção 3 escolhida")
+        case _:
+            print("Opção inválida")
+
+# Uso da função com diferentes opções
+match_example(2)
