@@ -253,19 +253,26 @@ print(numeros.index(8,3,6)) # Buscar o indice do valor 8, entre os indices 6 a 8
 
 # Trabalhando com slice de lista com parametro 'inicio'
 
-lista = [1,2,3,4]
-print(lista[1:]) # Iniciando no indice 1 e pegando todos os elementos restantes
 
-# Trabalhando com slice no parametro fim
+list1 = [8, 0, 9, 5]
 
-print(lista[:-1]) # Comeca em 0 , pega ate o indice 2 - 1
+# Positivas:
+print(list1[::1])   # Todos os elementos em ordem original: [8, 0, 9, 5]
+print(list1[::2])   # Todos os elementos em passos de 2: [8, 9]
+print(list1[1::2])  # A partir do segundo elemento, em passos de 2: [0, 5]
+print(list1[1:])    # Do segundo elemento até o final: [0, 9, 5]
+print(list1[:3])    # Do início até o quarto elemento (não inclusivo): [8, 0, 9]
+print(list1[1:3])   # Do segundo ao terceiro elemento (não inclusivo): [0, 9]
+print(list1[1:4])   # Do segundo ao quarto elemento (não inclusivo): [0, 9, 5]
 
-print(lista[1:3]) # Comeca em 1 , pega ate o indice 3 - 1
+# Negativas:
+print(list1[::-1])  # Todos os elementos em ordem reversa: [5, 9, 0, 8]
+print(list1[::-2])  # Todos os elementos em ordem reversa em passos de 2: [5, 0]
+print(list1[1::-1]) # Do segundo elemento até o início em ordem reversa: [0, 8]
+print(list1[:-1])   # Todos os elementos exceto o último: [8, 0, 9]
+print(list1[-3:])   # Os últimos três elementos: [0, 9, 5]
+print(list1[-2:-1]) # Do penúltimo ao último elemento (não inclusivo): [9]
 
-# Trabalhando com slice de lista com parametro passo
-print(lista[1::2]) # comeca em 1 ,ate o final, de 2 em 2
-
-print(lista[::2]) # comeca em 0 ,ate o final, de 2 em 2
 
 # Invertendo valores em uma lista
 

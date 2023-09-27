@@ -1,0 +1,15 @@
+O Unicode é um sistema de codificação de caracteres que visa representar todos os caracteres de todos os idiomas e scripts usados em computadores em todo o mundo. 
+Ele é usado para garantir que os caracteres de diferentes idiomas e scripts possam ser representados e exibidos corretamente em computadores e dispositivos.
+
+Em Python, você pode converter um número inteiro em um caractere Unicode usando a função chr(). A função chr() recebe um valor inteiro (o código Unicode) como argumento e retorna o caractere correspondente.
+
+Aqui está um exemplo simples:
+
+python
+Copy code
+unicode_code = 65  # Este é o código Unicode para o caractere 'A'
+character = chr(unicode_code)
+print(character)  # Isso imprimirá 'A'
+Neste exemplo, chr(65) retorna o caractere 'A', que corresponde ao código Unicode 65.
+
+Portanto, para converter um inteiro em um caractere Unicode em Python, você deve usar a função chr().
