@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+Dada uma lista de palavras, crie uma nova lista que contenha apenas as palavras que contêm a letra "e".
+Dada uma lista de números, crie uma nova lista que contenha apenas os números que são múltiplos de 3.
+Dada uma lista de números, encontre o terceiro número ímpar na lista.
+Dada uma lista de palavras, crie uma nova lista que contenha apenas as palavras que são palíndromos (ou seja, que podem ser lidas da mesma forma de trás para frente).
+Crie uma lista de números e encontre o produto de todos os números na lista.
+Dada uma lista de números, crie uma nova lista que contenha apenas os números que são maiores do que a média da lista.
+Dada uma lista de números, crie uma nova lista que contenha apenas os números que são primos
+Dada uma lista de palavras, crie uma nova lista que contenha apenas as palavras que começam com a letra "A"
+Dada uma lista de números, crie uma nova lista que contenha apenas os números que são múltiplos de 2 ou 3.
