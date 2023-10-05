@@ -10,7 +10,6 @@
 
 
 
-Dada uma lista de números, crie uma nova lista que contenha apenas os números que são maiores do que a média da lista.
-Dada uma lista de números, crie uma nova lista que contenha apenas os números que são primos
-Dada uma lista de palavras, crie uma nova lista que contenha apenas as palavras que começam com a letra "A"
-Dada uma lista de números, crie uma nova lista que contenha apenas os números que são múltiplos de 2 ou 3.
+
+
+
