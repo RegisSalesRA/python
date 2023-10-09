@@ -2,6 +2,7 @@
     "python.analysis.extraPaths": [
         "./projeto_Banco",
         "./mercado",
-        "./exercicios/basic"
+        "./exercicios/basic",
+        "./exercicios"
     ],
 }
