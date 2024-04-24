@@ -1,15 +1,69 @@
 
+Exercícios Básicos:
+
+Soma dos Elementos:
+Escreva uma função que receba uma lista de números e retorne a soma de todos os elementos.
+
+Maior Elemento:
+Crie uma função que encontre o maior número em uma lista de números.
+
+Contagem de Elementos:
+Implemente uma função que conte quantas vezes um determinado elemento aparece em uma lista.
+
+Inverter uma Lista:
+Escreva uma função para inverter uma lista.
+
+Remover Duplicatas:
+Crie uma função que remova os elementos duplicados de uma lista.
+
+Ordenar Lista:
+Implemente uma função para ordenar uma lista de números em ordem crescente.
+
+Verificar Palíndromo:
+Escreva uma função para verificar se uma lista é um palíndromo (ou seja, se ela é igual à sua própria inversa).
+
+Listas Concatenadas:
+Faça uma função que receba duas listas e retorne uma nova lista com os elementos das duas listas concatenadas.
+
+Média da Lista:
+Escreva uma função que calcule a média dos elementos em uma lista de números.
+
+Remover Elemento Específico:
+Crie uma função que remova um elemento específico de uma lista e retorne a lista modificada.
 
 
 
 
 
 
+Exercícios de Nível Médio:
 
+Interseção de Listas:
+Escreva uma função que receba duas listas e retorne uma lista contendo apenas os elementos comuns entre as duas (sem duplicatas).
 
+Sublista Crescente Máxima:
+Implemente uma função que encontre e retorne a maior sublista contínua em uma lista de números, onde os elementos estão em ordem crescente.
 
+União de Listas:
+Crie uma função que receba duas listas e retorne uma nova lista contendo todos os elementos das duas listas, sem repetições.
 
+Rotacionar uma Lista:
+Escreva uma função que rotacione os elementos de uma lista para a esquerda por um número especificado de vezes.
 
+Diferença entre Listas:
+Implemente uma função que receba duas listas e retorne uma lista contendo os elementos que estão presentes em apenas uma das listas (e não em ambas).
 
+Ordenação Personalizada:
+Escreva uma função de ordenação que classifique uma lista de strings com base no comprimento das strings, do menor para o maior.
 
+Combinar Listas Ordenadas:
+Crie uma função que receba duas listas ordenadas e retorne uma única lista ordenada contendo todos os elementos das listas originais.
 
+Maior Sequência Crescente:
+Escreva uma função que encontre e retorne a maior sequência contínua em uma lista de números, onde os elementos estão em ordem crescente.
+
+Intercalar Listas:
+Implemente uma função que receba duas listas e retorne uma nova lista intercalando os elementos das duas listas originais.
+
+Média Móvel:
+Escreva uma função que receba uma lista de números e um tamanho de janela, e retorne uma lista com a média móvel dos elementos (média dos elementos em cada janela).
